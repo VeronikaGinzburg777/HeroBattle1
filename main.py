@@ -31,7 +31,6 @@ class Hero:
         self.attack_power = 40
 
     def attac(self, other):
-
         other.health -= self.attack_power
     def is_alive(self):
          return self.health > 0
@@ -51,7 +50,7 @@ class Game:
             if not self.computer.is_alive():
                 print(f"Побеждает {self.player.name}")
                 break
-                
+
             print(f"{self.computer.name} - здоровье: {self.computer.health} ")
             print(f"{self.player.name} - здоровье: {self.player.health} ")
 
